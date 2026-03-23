@@ -93,13 +93,13 @@ export default function Faq() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
                   href="tel:+74212000000"
-                  className="border border-primary text-primary text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                  className="btn-outline !text-sm !py-2.5 !px-5 !min-h-[42px]"
                 >
                   +7 (4212) 00-00-00
                 </a>
                 <Link
                   to="/contacts"
-                  className="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-accent/90 transition-colors"
+                  className="btn-primary !text-sm !py-2.5 !px-5 !min-h-[42px]"
                 >
                   Написать нам
                 </Link>

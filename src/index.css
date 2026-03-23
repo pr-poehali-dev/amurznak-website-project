@@ -148,3 +148,17 @@
     box-shadow: var(--shadow-sm);
   }
 }
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-[#174A84] text-white font-semibold text-base px-6 py-3 rounded-[10px] min-h-[50px] transition-colors hover:bg-[#123B6A] focus:outline-none focus:ring-2 focus:ring-[#174A84]/40;
+  }
+
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 bg-[#F59E0B] text-[#111827] font-semibold text-base px-6 py-3 rounded-[10px] min-h-[50px] transition-colors hover:bg-[#D97706] focus:outline-none focus:ring-2 focus:ring-[#F59E0B]/40;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-[#174A84] font-semibold text-base px-6 py-3 rounded-[10px] min-h-[50px] border border-[#174A84] transition-colors hover:bg-[#174A84] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#174A84]/40;
+  }
+}

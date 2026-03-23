@@ -81,7 +81,7 @@ export default function Portfolio() {
             </p>
             <Link
               to="/contacts"
-              className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors inline-block"
+              className="btn-primary"
             >
               Оставить заявку
             </Link>

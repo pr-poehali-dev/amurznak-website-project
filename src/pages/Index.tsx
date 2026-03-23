@@ -148,16 +148,10 @@ export default function Index() {
                 Макет и расчёт в день обращения. Типовые решения от 2 дней. Доставка и монтаж.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
-                <Link
-                  to="/contacts"
-                  className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors text-center"
-                >
+                <Link to="/contacts" className="btn-primary text-center">
                   Рассчитать стоимость
                 </Link>
-                <Link
-                  to="/catalog"
-                  className="border border-primary text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors text-center"
-                >
+                <Link to="/catalog" className="btn-outline text-center">
                   Получить каталог и цены
                 </Link>
               </div>
@@ -225,7 +219,7 @@ export default function Index() {
                   </Link>
                   <Link
                     to="/contacts"
-                    className="flex-1 text-center text-xs font-medium bg-accent text-white rounded-lg px-3 py-2 hover:bg-accent/90 transition-colors"
+                    className="flex-1 text-center text-xs font-medium bg-[#174A84] text-white rounded-lg px-3 py-2 hover:bg-[#123B6A] transition-colors"
                   >
                     Рассчитать
                   </Link>
@@ -259,10 +253,7 @@ export default function Index() {
             ))}
           </div>
           <div className="text-center">
-            <Link
-              to="/solutions"
-              className="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent/90 transition-colors"
-            >
+            <Link to="/solutions" className="btn-primary">
               Подобрать комплект для объекта
             </Link>
           </div>
@@ -289,13 +280,13 @@ export default function Index() {
             <div className="flex flex-col gap-3 shrink-0">
               <Link
                 to="/contacts"
-                className="bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-center"
+                className="inline-flex items-center justify-center bg-white text-[#174A84] font-semibold text-base px-6 py-3 rounded-[10px] min-h-[50px] hover:bg-white/90 transition-colors text-center"
               >
                 Рассчитать стоимость
               </Link>
               <a
                 href={`tel:${ТЕЛЕФОН.replace(/\D/g, "").replace(/^/, "+")}`}
-                className="border border-white/30 text-white font-medium px-6 py-3 rounded-lg hover:bg-white/10 transition-colors text-center"
+                className="inline-flex items-center justify-center border border-white/30 text-white font-medium text-base px-6 py-3 rounded-[10px] min-h-[50px] hover:bg-white/10 transition-colors text-center"
               >
                 {ТЕЛЕФОН}
               </a>

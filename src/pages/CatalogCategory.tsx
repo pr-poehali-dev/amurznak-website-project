@@ -152,7 +152,7 @@ export default function CatalogCategory() {
             </div>
             <Link
               to="/contacts"
-              className="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-accent/90 transition-colors text-center shrink-0"
+              className="btn-primary !text-sm !py-2.5 !px-5 !min-h-[42px] text-center shrink-0"
             >
               Запросить расчёт
             </Link>

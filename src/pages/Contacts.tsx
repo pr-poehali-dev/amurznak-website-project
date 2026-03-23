@@ -132,7 +132,7 @@ export default function Contacts() {
                   </div>
                   <button
                     type="submit"
-                    className="bg-accent text-white font-semibold py-3 rounded-lg hover:bg-accent/90 transition-colors w-full"
+                    className="btn-primary w-full"
                   >
                     Отправить заявку
                   </button>
