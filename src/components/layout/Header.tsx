@@ -49,7 +49,7 @@ export default function Header() {
             </a>
             <Link
               to="/contacts"
-              className="bg-accent text-white text-sm font-semibold px-4 py-2 rounded hover:bg-accent/90 transition-colors"
+              className="bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors"
             >
               Заказать
             </Link>
@@ -70,7 +70,7 @@ export default function Header() {
                 <Link
                   key={item.href}
                   to={item.href}
-                  className={`px-2 py-2.5 text-sm font-medium rounded transition-colors hover:bg-secondary ${
+                  className={`px-2 py-2.5 text-sm font-medium rounded-lg transition-colors hover:bg-secondary ${
                     location.pathname === item.href
                       ? "text-primary bg-secondary"
                       : "text-foreground/70"
@@ -87,7 +87,7 @@ export default function Header() {
               </a>
               <Link
                 to="/contacts"
-                className="bg-accent text-white text-sm font-semibold px-4 py-2 rounded text-center hover:bg-accent/90 transition-colors"
+                className="bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg text-center hover:bg-accent/90 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 Заказать

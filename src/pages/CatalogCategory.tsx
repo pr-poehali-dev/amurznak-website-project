@@ -122,7 +122,7 @@ export default function CatalogCategory() {
 
       <section className="bg-secondary">
         <div className="container mx-auto px-4 max-w-7xl py-12">
-          <div className="bg-white border border-border rounded overflow-hidden">
+          <div className="bg-white border border-border rounded-xl overflow-hidden shadow-sm-soft">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border bg-secondary">
@@ -145,14 +145,14 @@ export default function CatalogCategory() {
             </table>
           </div>
 
-          <div className="mt-6 bg-white border border-border rounded p-6 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div className="mt-6 bg-white border border-border rounded-xl p-6 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-sm-soft">
             <div>
               <p className="text-sm font-semibold text-foreground mb-1">Нужен нестандартный размер или материал?</p>
               <p className="text-xs text-muted-foreground">Изготовим по вашим параметрам — оставьте заявку</p>
             </div>
             <Link
               to="/contacts"
-              className="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-accent/90 transition-colors text-center shrink-0"
+              className="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-accent/90 transition-colors text-center shrink-0"
             >
               Запросить расчёт
             </Link>

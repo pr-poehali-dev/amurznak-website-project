@@ -75,7 +75,7 @@ export default function Prices() {
         <div className="container mx-auto px-4 max-w-7xl py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {priceGroups.map((group) => (
-              <div key={group.title} className="bg-white border border-border rounded overflow-hidden">
+              <div key={group.title} className="bg-white border border-border rounded-xl overflow-hidden shadow-sm-soft">
                 <div className="px-5 py-4 border-b border-border bg-secondary">
                   <h3 className="text-sm font-semibold text-foreground">{group.title}</h3>
                 </div>
@@ -93,7 +93,7 @@ export default function Prices() {
             ))}
           </div>
 
-          <div className="mt-8 bg-white border border-border rounded p-6">
+          <div className="mt-8 bg-white border border-border rounded-xl p-6 shadow-sm-soft">
             <h3 className="text-base font-semibold text-foreground mb-4">На стоимость влияет</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {factors.map((f) => (
@@ -109,14 +109,14 @@ export default function Prices() {
 
       <section className="bg-white border-t border-border">
         <div className="container mx-auto px-4 max-w-7xl py-12">
-          <div className="bg-primary rounded p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="bg-primary rounded-xl p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <h3 className="text-xl font-bold text-white mb-2">Хотите точный расчёт?</h3>
               <p className="text-white/70 text-sm">Пришлите список нужных позиций — рассчитаем стоимость за 1 рабочий день</p>
             </div>
             <Link
               to="/contacts"
-              className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90 transition-colors text-center shrink-0"
+              className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors text-center shrink-0"
             >
               Запросить расчёт
             </Link>

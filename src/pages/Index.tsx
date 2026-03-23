@@ -150,13 +150,13 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 <Link
                   to="/contacts"
-                  className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90 transition-colors text-center"
+                  className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors text-center"
                 >
                   Рассчитать стоимость
                 </Link>
                 <Link
                   to="/catalog"
-                  className="border border-primary text-primary font-semibold px-6 py-3 rounded hover:bg-primary hover:text-white transition-colors text-center"
+                  className="border border-primary text-primary font-semibold px-6 py-3 rounded-lg hover:bg-primary hover:text-white transition-colors text-center"
                 >
                   Получить каталог и цены
                 </Link>
@@ -165,7 +165,7 @@ export default function Index() {
                 Отправьте размеры, фото места установки или описание задачи — подготовим 2–3 варианта расчёта.
               </p>
             </div>
-            <div className="w-full h-80 md:h-96 bg-muted rounded flex items-center justify-center text-muted-foreground text-sm border border-dashed border-border">
+            <div className="w-full h-80 md:h-96 bg-muted rounded-xl flex items-center justify-center text-muted-foreground text-sm border border-dashed border-border">
               Фото производства / готовой продукции
             </div>
           </div>
@@ -178,7 +178,7 @@ export default function Index() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {advantages.map((item) => (
               <div key={item.title} className="flex flex-col gap-3">
-                <div className="w-10 h-10 rounded bg-primary/10 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Icon name={item.icon} size={20} className="text-primary" />
                 </div>
                 <h3 className="text-sm font-semibold text-foreground">{item.title}</h3>
@@ -208,9 +208,9 @@ export default function Index() {
             {catalogCategories.map((cat) => (
               <div
                 key={cat.href}
-                className="bg-white border border-border rounded p-5 hover:border-primary/40 hover:shadow-sm transition-all flex flex-col"
+                className="bg-white border border-border rounded-xl p-5 hover:border-primary/40 hover:shadow-card transition-all flex flex-col shadow-sm-soft"
               >
-                <div className="w-9 h-9 rounded bg-secondary flex items-center justify-center mb-3">
+                <div className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center mb-3">
                   <Icon name={cat.icon} size={18} className="text-foreground/50" />
                 </div>
                 <h3 className="text-sm font-semibold text-foreground mb-1.5">{cat.title}</h3>
@@ -219,13 +219,13 @@ export default function Index() {
                 <div className="flex gap-2">
                   <Link
                     to={cat.href}
-                    className="flex-1 text-center text-xs font-medium border border-border rounded px-3 py-2 text-foreground/70 hover:border-primary/40 hover:text-primary transition-colors"
+                    className="flex-1 text-center text-xs font-medium border border-border rounded-lg px-3 py-2 text-foreground/70 hover:border-primary/40 hover:text-primary transition-colors"
                   >
                     Подробнее
                   </Link>
                   <Link
                     to="/contacts"
-                    className="flex-1 text-center text-xs font-medium bg-primary text-white rounded px-3 py-2 hover:bg-primary/90 transition-colors"
+                    className="flex-1 text-center text-xs font-medium bg-accent text-white rounded-lg px-3 py-2 hover:bg-accent/90 transition-colors"
                   >
                     Рассчитать
                   </Link>
@@ -248,7 +248,7 @@ export default function Index() {
               <Link
                 key={sol.href}
                 to={sol.href}
-                className="border border-border bg-white rounded p-5 hover:border-primary/40 hover:shadow-sm transition-all group"
+                className="border border-border bg-white rounded-xl p-5 hover:border-primary/40 hover:shadow-card transition-all group shadow-sm-soft"
               >
                 <h3 className="text-sm font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {sol.title}
@@ -261,7 +261,7 @@ export default function Index() {
           <div className="text-center">
             <Link
               to="/solutions"
-              className="inline-block bg-primary text-white font-medium px-8 py-3 rounded hover:bg-primary/90 transition-colors"
+              className="inline-block bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent/90 transition-colors"
             >
               Подобрать комплект для объекта
             </Link>
@@ -289,13 +289,13 @@ export default function Index() {
             <div className="flex flex-col gap-3 shrink-0">
               <Link
                 to="/contacts"
-                className="bg-white text-primary font-semibold px-6 py-3 rounded hover:bg-white/90 transition-colors text-center"
+                className="bg-white text-primary font-semibold px-6 py-3 rounded-lg hover:bg-white/90 transition-colors text-center"
               >
                 Рассчитать стоимость
               </Link>
               <a
                 href={`tel:${ТЕЛЕФОН.replace(/\D/g, "").replace(/^/, "+")}`}
-                className="border border-white/30 text-white font-medium px-6 py-3 rounded hover:bg-white/10 transition-colors text-center"
+                className="border border-white/30 text-white font-medium px-6 py-3 rounded-lg hover:bg-white/10 transition-colors text-center"
               >
                 {ТЕЛЕФОН}
               </a>

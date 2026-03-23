@@ -33,11 +33,11 @@ export default function Contacts() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {/* Contact info */}
             <div className="flex flex-col gap-6">
-              <div className="bg-white border border-border rounded p-6">
+              <div className="bg-white border border-border rounded-xl p-6 shadow-sm-soft">
                 <h3 className="text-base font-semibold text-foreground mb-5">Контактная информация</h3>
                 <div className="flex flex-col gap-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                       <Icon name="Phone" size={16} className="text-primary" />
                     </div>
                     <div>
@@ -48,7 +48,7 @@ export default function Contacts() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                       <Icon name="Mail" size={16} className="text-primary" />
                     </div>
                     <div>
@@ -59,7 +59,7 @@ export default function Contacts() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                       <Icon name="MapPin" size={16} className="text-primary" />
                     </div>
                     <div>
@@ -68,7 +68,7 @@ export default function Contacts() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
+                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
                       <Icon name="Clock" size={16} className="text-primary" />
                     </div>
                     <div>
@@ -80,13 +80,13 @@ export default function Contacts() {
                 </div>
               </div>
 
-              <div className="w-full h-56 bg-muted rounded border border-dashed border-border flex items-center justify-center text-xs text-muted-foreground">
+              <div className="w-full h-56 bg-muted rounded-xl border border-dashed border-border flex items-center justify-center text-xs text-muted-foreground">
                 Карта / Яндекс.Карты
               </div>
             </div>
 
             {/* Form */}
-            <div className="bg-white border border-border rounded p-6">
+            <div className="bg-white border border-border rounded-xl p-6 shadow-sm-soft">
               <h3 className="text-base font-semibold text-foreground mb-5">Оставить заявку</h3>
               {sent ? (
                 <div className="flex flex-col items-center justify-center h-48 text-center">
@@ -106,7 +106,7 @@ export default function Contacts() {
                       value={form.name}
                       onChange={(e) => setForm({ ...form, name: e.target.value })}
                       placeholder="Иван Иванов"
-                      className="w-full border border-border rounded px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
+                      className="w-full border border-border rounded-lg px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
                     />
                   </div>
                   <div>
@@ -117,7 +117,7 @@ export default function Contacts() {
                       value={form.phone}
                       onChange={(e) => setForm({ ...form, phone: e.target.value })}
                       placeholder="+7 (000) 000-00-00"
-                      className="w-full border border-border rounded px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
+                      className="w-full border border-border rounded-lg px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors"
                     />
                   </div>
                   <div>
@@ -127,12 +127,12 @@ export default function Contacts() {
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
                       placeholder="Опишите вашу задачу..."
                       rows={4}
-                      className="w-full border border-border rounded px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none"
+                      className="w-full border border-border rounded-lg px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors resize-none"
                     />
                   </div>
                   <button
                     type="submit"
-                    className="bg-accent text-white font-semibold py-3 rounded hover:bg-accent/90 transition-colors w-full"
+                    className="bg-accent text-white font-semibold py-3 rounded-lg hover:bg-accent/90 transition-colors w-full"
                   >
                     Отправить заявку
                   </button>

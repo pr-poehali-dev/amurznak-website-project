@@ -73,7 +73,7 @@ export default function Footer() {
             </ul>
             <Link
               to="/contacts"
-              className="mt-5 inline-block bg-accent text-white text-sm font-semibold px-4 py-2 rounded hover:bg-accent/90 transition-colors"
+              className="mt-5 inline-block bg-accent text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-accent/90 transition-colors"
             >
               Оставить заявку
             </Link>

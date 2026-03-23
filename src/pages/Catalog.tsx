@@ -85,9 +85,9 @@ export default function Catalog() {
               <Link
                 key={cat.href}
                 to={cat.href}
-                className="bg-white border border-border rounded p-6 hover:border-primary/40 hover:shadow-sm transition-all group flex flex-col"
+                className="bg-white border border-border rounded-xl p-6 hover:border-primary/40 hover:shadow-card transition-all group flex flex-col shadow-sm-soft"
               >
-                <div className="w-10 h-10 rounded bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
                   <Icon name={cat.icon} size={20} className="text-foreground/40 group-hover:text-primary transition-colors" />
                 </div>
                 <h3 className="text-sm font-semibold text-foreground mb-2">{cat.title}</h3>
@@ -104,14 +104,14 @@ export default function Catalog() {
 
       <section className="bg-white border-t border-border">
         <div className="container mx-auto px-4 max-w-7xl py-12">
-          <div className="bg-secondary rounded p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div className="bg-secondary rounded-xl p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <h3 className="text-lg font-semibold text-foreground mb-1">Не нашли нужную позицию?</h3>
               <p className="text-sm text-muted-foreground">Изготовим по вашим размерам и требованиям — оставьте заявку</p>
             </div>
             <Link
               to="/contacts"
-              className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90 transition-colors text-center shrink-0"
+              className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors text-center shrink-0"
             >
               Получить консультацию
             </Link>

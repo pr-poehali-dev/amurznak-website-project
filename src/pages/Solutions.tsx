@@ -113,10 +113,10 @@ export default function Solutions() {
               <div
                 key={sol.id}
                 id={sol.id}
-                className="bg-white border border-border rounded p-6 flex flex-col"
+                className="bg-white border border-border rounded-xl p-6 flex flex-col shadow-sm-soft hover:shadow-card transition-all"
               >
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="w-10 h-10 rounded bg-primary/10 flex items-center justify-center shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                     <Icon name={sol.icon} size={20} className="text-primary" />
                   </div>
                   <h3 className="text-base font-semibold text-foreground leading-tight pt-1">{sol.title}</h3>
@@ -137,7 +137,7 @@ export default function Solutions() {
                   <span className="text-base font-bold text-primary">{sol.price}</span>
                   <Link
                     to="/contacts"
-                    className="text-sm font-semibold bg-accent text-white px-4 py-1.5 rounded hover:bg-accent/90 transition-colors"
+                    className="text-sm font-semibold bg-accent text-white px-4 py-1.5 rounded-lg hover:bg-accent/90 transition-colors"
                   >
                     Заказать
                   </Link>
@@ -157,7 +157,7 @@ export default function Solutions() {
             </div>
             <Link
               to="/contacts"
-              className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90 transition-colors text-center shrink-0"
+              className="bg-accent text-white font-semibold px-6 py-3 rounded-lg hover:bg-accent/90 transition-colors text-center shrink-0"
             >
               Обсудить проект
             </Link>

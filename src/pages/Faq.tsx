@@ -64,7 +64,7 @@ export default function Faq() {
       <section className="bg-secondary">
         <div className="container mx-auto px-4 max-w-7xl py-12">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white border border-border rounded overflow-hidden divide-y divide-border">
+            <div className="bg-white border border-border rounded-xl overflow-hidden divide-y divide-border shadow-sm-soft">
               {faqs.map((faq, i) => (
                 <div key={i}>
                   <button
@@ -87,19 +87,19 @@ export default function Faq() {
               ))}
             </div>
 
-            <div className="mt-8 bg-white border border-border rounded p-6 text-center">
+            <div className="mt-8 bg-white border border-border rounded-xl p-6 text-center shadow-sm-soft">
               <p className="text-sm font-semibold text-foreground mb-1">Остались вопросы?</p>
               <p className="text-xs text-muted-foreground mb-4">Свяжитесь с нами — ответим быстро</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
                   href="tel:+74212000000"
-                  className="border border-border text-foreground text-sm font-medium px-5 py-2.5 rounded hover:bg-secondary transition-colors"
+                  className="border border-primary text-primary text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-primary hover:text-white transition-colors"
                 >
                   +7 (4212) 00-00-00
                 </a>
                 <Link
                   to="/contacts"
-                  className="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded hover:bg-accent/90 transition-colors"
+                  className="bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-accent/90 transition-colors"
                 >
                   Написать нам
                 </Link>

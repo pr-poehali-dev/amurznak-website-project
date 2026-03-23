@@ -68,6 +68,10 @@ export default {
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
 			},
+			boxShadow: {
+				card: '0 8px 24px rgba(15, 23, 42, 0.06)',
+				'sm-soft': '0 2px 8px rgba(15, 23, 42, 0.04)',
+			},
 			keyframes: {
 				'accordion-down': {
 					from: {
