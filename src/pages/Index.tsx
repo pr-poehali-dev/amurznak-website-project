@@ -150,13 +150,13 @@ export default function Index() {
               <div className="flex flex-col sm:flex-row gap-3 mb-6">
                 <Link
                   to="/contacts"
-                  className="bg-primary text-white font-medium px-6 py-3 rounded hover:bg-primary/90 transition-colors text-center"
+                  className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90 transition-colors text-center"
                 >
                   Рассчитать стоимость
                 </Link>
                 <Link
                   to="/catalog"
-                  className="border border-border text-foreground font-medium px-6 py-3 rounded hover:bg-secondary transition-colors text-center"
+                  className="border border-primary text-primary font-semibold px-6 py-3 rounded hover:bg-primary hover:text-white transition-colors text-center"
                 >
                   Получить каталог и цены
                 </Link>

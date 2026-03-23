@@ -111,7 +111,7 @@ export default function Catalog() {
             </div>
             <Link
               to="/contacts"
-              className="bg-primary text-white font-medium px-6 py-3 rounded hover:bg-primary/90 transition-colors text-center shrink-0"
+              className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90 transition-colors text-center shrink-0"
             >
               Получить консультацию
             </Link>

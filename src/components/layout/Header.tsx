@@ -49,7 +49,7 @@ export default function Header() {
             </a>
             <Link
               to="/contacts"
-              className="bg-primary text-white text-sm font-medium px-4 py-2 rounded hover:bg-primary/90 transition-colors"
+              className="bg-accent text-white text-sm font-semibold px-4 py-2 rounded hover:bg-accent/90 transition-colors"
             >
               Заказать
             </Link>
@@ -87,7 +87,7 @@ export default function Header() {
               </a>
               <Link
                 to="/contacts"
-                className="bg-primary text-white text-sm font-medium px-4 py-2 rounded text-center"
+                className="bg-accent text-white text-sm font-semibold px-4 py-2 rounded text-center hover:bg-accent/90 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 Заказать

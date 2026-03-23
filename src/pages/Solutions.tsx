@@ -137,7 +137,7 @@ export default function Solutions() {
                   <span className="text-base font-bold text-primary">{sol.price}</span>
                   <Link
                     to="/contacts"
-                    className="text-sm font-medium text-primary border border-primary/30 px-4 py-1.5 rounded hover:bg-primary hover:text-white transition-colors"
+                    className="text-sm font-semibold bg-accent text-white px-4 py-1.5 rounded hover:bg-accent/90 transition-colors"
                   >
                     Заказать
                   </Link>
@@ -157,7 +157,7 @@ export default function Solutions() {
             </div>
             <Link
               to="/contacts"
-              className="bg-white text-primary font-semibold px-6 py-3 rounded hover:bg-white/90 transition-colors text-center shrink-0"
+              className="bg-accent text-white font-semibold px-6 py-3 rounded hover:bg-accent/90 transition-colors text-center shrink-0"
             >
               Обсудить проект
             </Link>
