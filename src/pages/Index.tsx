@@ -9,51 +9,59 @@ const ТЕЛЕФОН = "+7 (4162) 00-00-00";
 const catalogCategories = [
   {
     title: "Информационные стенды",
-    desc: "Универсальные настенные и напольные стенды для размещения документов, приказов и объявлений",
+    desc: "Стенды с карманами А4 и А5 для офисов, магазинов, школ, клиник и административных помещений.",
     href: "/catalog/info-stands",
     icon: "LayoutDashboard",
+    price: "от 4 500 ₽",
   },
   {
     title: "Уголок потребителя",
-    desc: "Готовые комплекты для соблюдения требований Закона о защите прав потребителей",
+    desc: "Готовые решения для магазинов, салонов, ПВЗ, офисов и сферы услуг.",
     href: "/catalog/consumer-corner",
     icon: "FileText",
+    price: "от 6 000 ₽",
   },
   {
     title: "Стенды по охране труда",
-    desc: "Информационные стенды и плакаты по охране труда для предприятий и организаций",
+    desc: "Информационные стенды для офиса, производства, склада и служебных помещений.",
     href: "/catalog/labor-safety",
     icon: "ShieldCheck",
+    price: "от 6 500 ₽",
   },
   {
-    title: "Стенды по пожарной безопасности",
-    desc: "Знаки, таблички и стенды согласно требованиям МЧС и ГОСТ Р 12.4.026",
+    title: "Пожарная безопасность",
+    desc: "Стенды и информационные панели для обязательного размещения.",
     href: "/catalog/fire-safety",
     icon: "Flame",
+    price: "от 7 000 ₽",
   },
   {
     title: "Таблички на двери",
-    desc: "Таблички с названием кабинета, отдела или должностью руководителя",
+    desc: "Кабинетные, служебные, интерьерные и навигационные таблички.",
     href: "/catalog/door-signs",
     icon: "DoorOpen",
+    price: "от 600 ₽",
   },
   {
     title: "Режим работы",
-    desc: "Таблички и вывески с режимом работы для магазинов, офисов и организаций",
+    desc: "Таблички и наклейки для входной группы, стекла и дверей.",
     href: "/catalog/work-hours",
     icon: "Clock",
+    price: "от 1 500 ₽",
   },
   {
     title: "Навигация",
-    desc: "Указатели направлений, поэтажные планы и навигационные системы для зданий",
+    desc: "Указатели и внутренняя навигация для офисов, клиник, учебных центров и коммерческих помещений.",
     href: "/catalog/navigation",
     icon: "Navigation",
+    price: "от 1 800 ₽",
   },
   {
-    title: "Комплекты под ключ",
-    desc: "Полное информационное оформление объекта в одном заказе",
+    title: "Оформление под ключ",
+    desc: "Стенды, таблички, режим работы, навигация, замер и монтаж.",
     href: "/catalog/kits",
     icon: "Package",
+    price: "от 22 000 ₽",
   },
 ];
 
@@ -81,12 +89,42 @@ const advantages = [
 ];
 
 const solutions = [
-  { title: "Для магазинов и салонов", href: "/solutions#shops" },
-  { title: "Для офисов", href: "/solutions#offices" },
-  { title: "Для клиник", href: "/solutions#clinics" },
-  { title: "Для ТСЖ и УК", href: "/solutions#hoa" },
-  { title: "Для школ и учебных центров", href: "/solutions#education" },
-  { title: "Для производств и складов", href: "/solutions#production" },
+  {
+    title: "Для магазинов и салонов",
+    desc: "Уголок потребителя, режим работы, таблички и базовая навигация для точки обслуживания.",
+    href: "/solutions#shops",
+    price: "от 12 000 ₽",
+  },
+  {
+    title: "Для офисов",
+    desc: "Информационные стенды, кабинетные таблички, навигация, указатели и оформление входной зоны.",
+    href: "/solutions#offices",
+    price: "от 22 000 ₽",
+  },
+  {
+    title: "Для клиник и медцентров",
+    desc: "Стенд для пациентов, лицензии, режим работы, таблички кабинетов и внутренняя навигация.",
+    href: "/solutions#clinics",
+    price: "от 45 000 ₽",
+  },
+  {
+    title: "Для ТСЖ и УК",
+    desc: "Стенды для жильцов, доски объявлений, таблички, указатели и служебная информация.",
+    href: "/solutions#hoa",
+    price: "от 25 000 ₽",
+  },
+  {
+    title: "Для школ и учебных центров",
+    desc: "Информационные стенды, расписание, кабинетные таблички и навигация по помещению.",
+    href: "/solutions#education",
+    price: "от 20 000 ₽",
+  },
+  {
+    title: "Для производств и складов",
+    desc: "Стенды по охране труда, пожарной безопасности, служебные таблички и указатели.",
+    href: "/solutions#production",
+    price: "от 18 000 ₽",
+  },
 ];
 
 export default function Index() {
@@ -154,11 +192,8 @@ export default function Index() {
       {/* Catalog */}
       <section className="bg-white border-b border-border">
         <div className="container mx-auto px-4 max-w-7xl py-16">
-          <div className="flex items-center justify-between mb-10">
-            <div>
-              <h2 className="text-2xl font-bold text-foreground">Каталог продукции</h2>
-              <p className="text-sm text-muted-foreground mt-1">Типовые и нестандартные решения по вашим размерам</p>
-            </div>
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="text-2xl font-bold text-foreground">Популярная продукция</h2>
             <Link
               to="/catalog"
               className="text-sm font-medium text-primary flex items-center gap-1 hover:gap-2 transition-all shrink-0"
@@ -166,19 +201,36 @@ export default function Index() {
               Весь каталог <Icon name="ArrowRight" size={16} />
             </Link>
           </div>
+          <p className="text-sm text-muted-foreground mb-10">
+            Базовые решения для обязательной информации, внутреннего оформления и навигации.
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {catalogCategories.map((cat) => (
-              <Link
+              <div
                 key={cat.href}
-                to={cat.href}
-                className="bg-white border border-border rounded p-5 hover:border-primary/40 hover:shadow-sm transition-all group"
+                className="bg-white border border-border rounded p-5 hover:border-primary/40 hover:shadow-sm transition-all flex flex-col"
               >
-                <div className="w-9 h-9 rounded bg-secondary flex items-center justify-center mb-3 group-hover:bg-primary/10 transition-colors">
-                  <Icon name={cat.icon} size={18} className="text-foreground/50 group-hover:text-primary transition-colors" />
+                <div className="w-9 h-9 rounded bg-secondary flex items-center justify-center mb-3">
+                  <Icon name={cat.icon} size={18} className="text-foreground/50" />
                 </div>
                 <h3 className="text-sm font-semibold text-foreground mb-1.5">{cat.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{cat.desc}</p>
-              </Link>
+                <p className="text-xs text-muted-foreground leading-relaxed flex-1 mb-4">{cat.desc}</p>
+                <p className="text-sm font-bold text-foreground mb-3">{cat.price}</p>
+                <div className="flex gap-2">
+                  <Link
+                    to={cat.href}
+                    className="flex-1 text-center text-xs font-medium border border-border rounded px-3 py-2 text-foreground/70 hover:border-primary/40 hover:text-primary transition-colors"
+                  >
+                    Подробнее
+                  </Link>
+                  <Link
+                    to="/contacts"
+                    className="flex-1 text-center text-xs font-medium bg-primary text-white rounded px-3 py-2 hover:bg-primary/90 transition-colors"
+                  >
+                    Рассчитать
+                  </Link>
+                </div>
+              </div>
             ))}
           </div>
         </div>
@@ -187,28 +239,32 @@ export default function Index() {
       {/* Ready solutions */}
       <section className="bg-secondary border-b border-border">
         <div className="container mx-auto px-4 max-w-7xl py-16">
-          <div className="flex items-center justify-between mb-10">
-            <div>
-              <h2 className="text-2xl font-bold text-foreground">Готовые решения по типу бизнеса</h2>
-              <p className="text-sm text-muted-foreground mt-1">Подобрали комплекты для разных сегментов — можно дополнить под вашу задачу</p>
-            </div>
-            <Link
-              to="/solutions"
-              className="text-sm font-medium text-primary flex items-center gap-1 hover:gap-2 transition-all shrink-0"
-            >
-              Все решения <Icon name="ArrowRight" size={16} />
-            </Link>
-          </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+          <h2 className="text-2xl font-bold text-foreground mb-3">Готовые решения для бизнеса и учреждений</h2>
+          <p className="text-sm text-muted-foreground mb-10">
+            Подбираем не отдельное изделие, а комплект под конкретный объект и задачу.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
             {solutions.map((sol) => (
               <Link
                 key={sol.href}
                 to={sol.href}
-                className="border border-border bg-white rounded px-4 py-3.5 text-sm font-medium text-foreground/70 hover:text-primary hover:border-primary/40 hover:bg-primary/5 transition-colors"
+                className="border border-border bg-white rounded p-5 hover:border-primary/40 hover:shadow-sm transition-all group"
               >
-                {sol.title}
+                <h3 className="text-sm font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                  {sol.title}
+                </h3>
+                <p className="text-xs text-muted-foreground leading-relaxed mb-4">{sol.desc}</p>
+                <p className="text-sm font-bold text-primary">{sol.price}</p>
               </Link>
             ))}
+          </div>
+          <div className="text-center">
+            <Link
+              to="/solutions"
+              className="inline-block bg-primary text-white font-medium px-8 py-3 rounded hover:bg-primary/90 transition-colors"
+            >
+              Подобрать комплект для объекта
+            </Link>
           </div>
         </div>
       </section>
