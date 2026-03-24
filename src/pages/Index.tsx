@@ -9,72 +9,79 @@ const ТЕЛЕФОН = "+7 (4162) 00-00-00";
 const catalogCategories = [
   {
     title: "Информационные стенды",
-    desc: "Стенды с карманами А4 и А5 для офисов, магазинов, школ, клиник и административных помещений.",
+    desc: "ПВХ 4–5 мм, карманы А4/А5. Настенные и напольные. Размер под заказ.",
     href: "/catalog/info-stands",
     icon: "LayoutDashboard",
-    price: "от 4 500 ₽",
+    price: "от 1 200 ₽",
   },
   {
     title: "Уголок потребителя",
-    desc: "Готовые решения для магазинов, салонов, ПВЗ, офисов и сферы услуг.",
+    desc: "Готовый комплект: карманы, таблички, заголовок. Соответствие законодательству.",
     href: "/catalog/consumer-corner",
     icon: "FileText",
-    price: "от 6 000 ₽",
+    price: "от 2 500 ₽",
   },
   {
     title: "Стенды по охране труда",
-    desc: "Информационные стенды для офиса, производства, склада и служебных помещений.",
+    desc: "ПВХ, алюминиевый профиль. Размеры 600×900, 900×1200 мм и нестандарт.",
     href: "/catalog/labor-safety",
     icon: "ShieldCheck",
-    price: "от 6 500 ₽",
-  },
-  {
-    title: "Пожарная безопасность",
-    desc: "Стенды и информационные панели для обязательного размещения.",
-    href: "/catalog/fire-safety",
-    icon: "Flame",
-    price: "от 7 000 ₽",
-  },
-  {
-    title: "Таблички на двери",
-    desc: "Кабинетные, служебные, интерьерные и навигационные таблички.",
-    href: "/catalog/door-signs",
-    icon: "DoorOpen",
-    price: "от 600 ₽",
-  },
-  {
-    title: "Режим работы",
-    desc: "Таблички и наклейки для входной группы, стекла и дверей.",
-    href: "/catalog/work-hours",
-    icon: "Clock",
-    price: "от 1 500 ₽",
-  },
-  {
-    title: "Навигация",
-    desc: "Указатели и внутренняя навигация для офисов, клиник, учебных центров и коммерческих помещений.",
-    href: "/catalog/navigation",
-    icon: "Navigation",
     price: "от 1 800 ₽",
   },
   {
+    title: "Пожарная безопасность",
+    desc: "Знаки, таблички, стенды по ГОСТ. Самоклейка, ПВХ, металл.",
+    href: "/catalog/fire-safety",
+    icon: "Flame",
+    price: "от 80 ₽",
+  },
+  {
+    title: "Таблички на двери",
+    desc: "Акрил, металл, ПВХ. Размер 200×60 мм и нестандарт. Печать и гравировка.",
+    href: "/catalog/door-signs",
+    icon: "DoorOpen",
+    price: "от 250 ₽",
+  },
+  {
+    title: "Режим работы",
+    desc: "ПВХ, акрил, металл. Стандартный формат или с вашим дизайном.",
+    href: "/catalog/work-hours",
+    icon: "Clock",
+    price: "от 450 ₽",
+  },
+  {
+    title: "Навигация",
+    desc: "Указатели, поэтажные планы, эвакуационные схемы. По ГОСТ и под заказ.",
+    href: "/catalog/navigation",
+    icon: "Navigation",
+    price: "от 400 ₽",
+  },
+  {
     title: "Оформление под ключ",
-    desc: "Стенды, таблички, режим работы, навигация, замер и монтаж.",
+    desc: "Стенды, таблички, навигация в одном заказе. Замер, макет, монтаж.",
     href: "/catalog/kits",
     icon: "Package",
-    price: "от 22 000 ₽",
+    price: "от 5 000 ₽",
   },
+];
+
+const heroFeatures = [
+  { icon: "Zap", text: "Изготовление от 1 дня" },
+  { icon: "FileText", text: "Макет перед производством" },
+  { icon: "Package", text: "От 1 экземпляра" },
+  { icon: "Truck", text: "Доставка по РФ" },
 ];
 
 const advantages = [
   {
-    icon: "FileCheck",
-    title: "Макет и расчёт в день обращения",
-    desc: "Подготовим 2–3 варианта расчёта после получения размеров или фото места установки",
+    icon: "Clock",
+    title: "Изготовление от 1 дня",
+    desc: "Типовые изделия — 1–2 дня. Сложные и нестандартные — по согласованию",
   },
   {
-    icon: "Layers",
-    title: "Типовые и индивидуальные решения",
-    desc: "Стенды, таблички и навигация в одном заказе — стандартные и под ваши размеры",
+    icon: "FileCheck",
+    title: "Макет и расчёт в день обращения",
+    desc: "Пришлите размеры или фото — подготовим 2–3 варианта расчёта",
   },
   {
     icon: "Building2",
@@ -84,44 +91,44 @@ const advantages = [
   {
     icon: "Truck",
     title: "Доставка и монтаж",
-    desc: "Доставляем и устанавливаем по Благовещенску и всей Амурской области",
+    desc: "Доставляем и устанавливаем по Благовещенску и Амурской области",
   },
 ];
 
 const solutions = [
   {
-    title: "Для магазинов и салонов",
-    desc: "Уголок потребителя, режим работы, таблички и базовая навигация для точки обслуживания.",
+    title: "Магазин или салон",
+    desc: "Уголок потребителя, режим работы, таблички на кассу и входную зону.",
     href: "/solutions#shops",
     price: "от 12 000 ₽",
   },
   {
-    title: "Для офисов",
-    desc: "Информационные стенды, кабинетные таблички, навигация, указатели и оформление входной зоны.",
+    title: "Офис",
+    desc: "Информационные стенды, таблички кабинетов, указатели, оформление ресепшена.",
     href: "/solutions#offices",
     price: "от 22 000 ₽",
   },
   {
-    title: "Для клиник и медцентров",
-    desc: "Стенд для пациентов, лицензии, режим работы, таблички кабинетов и внутренняя навигация.",
+    title: "Клиника или медцентр",
+    desc: "Стенд для пациентов, лицензии, режим работы, таблички кабинетов, навигация.",
     href: "/solutions#clinics",
     price: "от 45 000 ₽",
   },
   {
-    title: "Для ТСЖ и УК",
-    desc: "Стенды для жильцов, доски объявлений, таблички, указатели и служебная информация.",
+    title: "ТСЖ или управляющая компания",
+    desc: "Стенды для жильцов, доска объявлений, таблички, указатели по подъездам.",
     href: "/solutions#hoa",
     price: "от 25 000 ₽",
   },
   {
-    title: "Для школ и учебных центров",
-    desc: "Информационные стенды, расписание, кабинетные таблички и навигация по помещению.",
+    title: "Школа или учебный центр",
+    desc: "Информационные стенды, расписание, таблички кабинетов, эвакуационные знаки.",
     href: "/solutions#education",
     price: "от 20 000 ₽",
   },
   {
-    title: "Для производств и складов",
-    desc: "Стенды по охране труда, пожарной безопасности, служебные таблички и указатели.",
+    title: "Производство или склад",
+    desc: "Охрана труда, пожарная безопасность, служебные таблички, указатели зон.",
     href: "/solutions#production",
     price: "от 18 000 ₽",
   },
@@ -132,35 +139,55 @@ export default function Index() {
     <Layout>
       {/* Hero */}
       <section className="bg-white border-b border-border">
-        <div className="site-container py-16 md:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="site-container py-14 md:py-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            {/* Левая колонка */}
             <div>
-              <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
-                Производство в {ГОРОД}е
+              <p className="text-[#174A84] text-xs font-semibold uppercase tracking-widest mb-4">
+                Производство в {ГОРОД}е · {КОМПАНИЯ}
               </p>
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight mb-4">
-                Информационные стенды, таблички и навигация под ключ в {ГОРОД}е
+              <h1 className="font-bold text-foreground leading-tight mb-4">
+                Информационные стенды, таблички, навигация и вывески для бизнеса и учреждений
               </h1>
-              <p className="text-base text-muted-foreground leading-relaxed mb-3">
-                Изготавливаем информационные стенды, уголки потребителя, стенды по охране труда, таблички на двери, режим работы и внутреннюю навигацию для магазинов, офисов, клиник, ТСЖ, учебных и коммерческих объектов.
+              <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                Изготовление от 1 дня, макет, монтаж и доставка по Амурской области и РФ
               </p>
-              <p className="text-sm font-medium text-foreground mb-8">
-                Макет и расчёт в день обращения. Типовые решения от 2 дней. Доставка и монтаж.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-6">
+
+              {/* Фичи */}
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 mb-8">
+                {heroFeatures.map((f) => (
+                  <div key={f.text} className="flex items-center gap-2">
+                    <Icon name={f.icon} size={15} className="text-[#174A84] shrink-0" />
+                    <span className="text-sm text-foreground font-medium">{f.text}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Кнопки */}
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Link to="/contacts" className="btn-primary text-center">
                   Рассчитать стоимость
                 </Link>
                 <Link to="/catalog" className="btn-outline text-center">
-                  Получить каталог и цены
+                  Смотреть каталог
                 </Link>
               </div>
-              <p className="text-xs text-muted-foreground leading-relaxed">
-                Отправьте размеры, фото места установки или описание задачи — подготовим 2–3 варианта расчёта.
-              </p>
             </div>
-            <div className="w-full h-80 md:h-96 bg-muted rounded-xl flex items-center justify-center text-muted-foreground text-sm border border-dashed border-border">
-              Фото производства / готовой продукции
+
+            {/* Правая колонка — коллаж */}
+            <div className="grid grid-cols-2 gap-3 h-[380px] md:h-[420px]">
+              <div className="row-span-2 bg-[#F1F5F9] rounded-[14px] border border-[#E5E7EB] flex flex-col items-center justify-center gap-2 text-[#9CA3AF]">
+                <Icon name="LayoutDashboard" size={32} className="text-[#CBD5E1]" />
+                <span className="text-xs text-center px-4 leading-snug">Информационный стенд</span>
+              </div>
+              <div className="bg-[#F1F5F9] rounded-[14px] border border-[#E5E7EB] flex flex-col items-center justify-center gap-2 text-[#9CA3AF]">
+                <Icon name="DoorOpen" size={24} className="text-[#CBD5E1]" />
+                <span className="text-xs">Табличка</span>
+              </div>
+              <div className="bg-[#F1F5F9] rounded-[14px] border border-[#E5E7EB] flex flex-col items-center justify-center gap-2 text-[#9CA3AF]">
+                <Icon name="Store" size={24} className="text-[#CBD5E1]" />
+                <span className="text-xs">Вывеска</span>
+              </div>
             </div>
           </div>
         </div>
@@ -169,13 +196,13 @@ export default function Index() {
       {/* Advantages */}
       <section className="bg-[#F8FAFC] border-b border-border">
         <div className="site-container section-py">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {advantages.map((item) => (
-              <div key={item.title} className="flex flex-col gap-3">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <Icon name={item.icon} size={20} className="text-primary" />
+              <div key={item.title} className="bg-white border border-[#E5E7EB] rounded-[14px] p-5" style={{ boxShadow: "0 2px 8px rgba(15,23,42,0.04)" }}>
+                <div className="w-10 h-10 rounded-lg bg-[#EEF4FF] flex items-center justify-center mb-4">
+                  <Icon name={item.icon} size={20} className="text-[#174A84]" />
                 </div>
-                <h3 className="text-sm font-semibold text-foreground">{item.title}</h3>
+                <h3 className="text-sm font-semibold text-foreground mb-1.5">{item.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{item.desc}</p>
               </div>
             ))}
@@ -268,13 +295,13 @@ export default function Index() {
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div className="max-w-xl">
               <h2 className="text-2xl font-bold text-white mb-2">Нужны стенды, таблички или навигация?</h2>
-              <p className="text-white/70 text-sm leading-relaxed mb-4">
-                Отправьте размеры, фото места установки или описание задачи — подготовим расчёт в день обращения.
+              <p className="text-white/80 text-base leading-relaxed mb-5">
+                Пришлите размеры, фото места или описание задачи — расчёт в день обращения.
               </p>
-              <div className="flex flex-wrap gap-3 text-xs text-white/60">
-                {["Типовые и индивидуальные решения", "Стенды, таблички и навигация в одном заказе", "Работаем с ИП, ООО и учреждениями", "Помогаем с макетом и подбором комплектации", "Доставка и монтаж"].map((t) => (
+              <div className="flex flex-wrap gap-3 text-sm text-white/70">
+                {["От 1 экземпляра", "ПВХ, акрил, металл, композит", "Работаем с ИП, ООО и учреждениями", "Полный пакет документов", "Доставка по РФ"].map((t) => (
                   <span key={t} className="flex items-center gap-1.5">
-                    <Icon name="Check" size={12} className="text-white/50" /> {t}
+                    <Icon name="Check" size={13} className="text-white/50" /> {t}
                   </span>
                 ))}
               </div>
