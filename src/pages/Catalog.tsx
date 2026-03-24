@@ -65,35 +65,36 @@ export default function Catalog() {
   return (
     <Layout>
       <section className="bg-white border-b border-border">
-        <div className="container mx-auto px-4 max-w-7xl py-10">
+        <div className="site-container py-10">
           <div className="flex items-center gap-2 text-sm text-muted-foreground mb-6">
             <Link to="/" className="hover:text-primary transition-colors">Главная</Link>
             <span>/</span>
             <span className="text-foreground">Каталог</span>
           </div>
           <h1 className="text-3xl font-bold text-foreground mb-3">Каталог продукции</h1>
-          <p className="text-muted-foreground max-w-2xl">
+          <p className="text-muted-foreground max-w-2xl text-base">
             Производим информационные стенды, таблички и знаки для офисов, магазинов, производств и других организаций. Стандартные размеры и изготовление по вашим требованиям.
           </p>
         </div>
       </section>
 
-      <section className="bg-secondary">
-        <div className="container mx-auto px-4 max-w-7xl py-12">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <section className="bg-[#F8FAFC] section-py">
+        <div className="site-container">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
             {categories.map((cat) => (
               <Link
                 key={cat.href}
                 to={cat.href}
-                className="bg-white border border-border rounded-xl p-6 hover:border-primary/40 hover:shadow-card transition-all group flex flex-col shadow-sm-soft"
+                className="bg-white border border-[#E5E7EB] rounded-[14px] p-6 hover:border-primary/40 hover:shadow-[0_8px_32px_rgba(15,23,42,0.10)] transition-all group flex flex-col"
+                style={{ boxShadow: "0 2px 8px rgba(15,23,42,0.04)" }}
               >
-                <div className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
+                <div className="w-10 h-10 rounded-lg bg-[#F1F5F9] flex items-center justify-center mb-4 group-hover:bg-primary/10 transition-colors">
                   <Icon name={cat.icon} size={20} className="text-foreground/40 group-hover:text-primary transition-colors" />
                 </div>
-                <h3 className="text-sm font-semibold text-foreground mb-2">{cat.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed flex-1 mb-4">{cat.desc}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-semibold text-primary">{cat.count}</span>
+                <h3 className="text-base font-semibold text-foreground mb-2 leading-snug">{cat.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-4">{cat.desc}</p>
+                <div className="flex items-center justify-between pt-3 border-t border-[#E5E7EB]">
+                  <span className="text-sm font-bold text-[#174A84]">{cat.count}</span>
                   <Icon name="ArrowRight" size={16} className="text-muted-foreground group-hover:text-primary transition-colors" />
                 </div>
               </Link>
@@ -103,8 +104,8 @@ export default function Catalog() {
       </section>
 
       <section className="bg-white border-t border-border">
-        <div className="container mx-auto px-4 max-w-7xl py-12">
-          <div className="bg-secondary rounded-xl p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div className="site-container py-12">
+          <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
             <div>
               <h3 className="text-lg font-semibold text-foreground mb-1">Не нашли нужную позицию?</h3>
               <p className="text-sm text-muted-foreground">Изготовим по вашим размерам и требованиям — оставьте заявку</p>

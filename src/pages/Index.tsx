@@ -132,7 +132,7 @@ export default function Index() {
     <Layout>
       {/* Hero */}
       <section className="bg-white border-b border-border">
-        <div className="container mx-auto px-4 max-w-7xl py-20 md:py-28">
+        <div className="site-container py-16 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-4">
@@ -167,8 +167,8 @@ export default function Index() {
       </section>
 
       {/* Advantages */}
-      <section className="bg-secondary border-b border-border">
-        <div className="container mx-auto px-4 max-w-7xl py-14">
+      <section className="bg-[#F8FAFC] border-b border-border">
+        <div className="site-container section-py">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {advantages.map((item) => (
               <div key={item.title} className="flex flex-col gap-3">
@@ -185,7 +185,7 @@ export default function Index() {
 
       {/* Catalog */}
       <section className="bg-white border-b border-border">
-        <div className="container mx-auto px-4 max-w-7xl py-16">
+        <div className="site-container section-py">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-2xl font-bold text-foreground">Популярная продукция</h2>
             <Link
@@ -198,11 +198,12 @@ export default function Index() {
           <p className="text-sm text-muted-foreground mb-10">
             Базовые решения для обязательной информации, внутреннего оформления и навигации.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {catalogCategories.map((cat) => (
               <div
                 key={cat.href}
-                className="bg-white border border-border rounded-xl p-5 hover:border-primary/40 hover:shadow-card transition-all flex flex-col shadow-sm-soft"
+                className="bg-white border border-[#E5E7EB] rounded-[14px] p-5 hover:border-primary/40 hover:shadow-[0_8px_32px_rgba(15,23,42,0.10)] transition-all flex flex-col"
+                style={{ boxShadow: "0 2px 8px rgba(15,23,42,0.04)" }}
               >
                 <div className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center mb-3">
                   <Icon name={cat.icon} size={18} className="text-foreground/50" />
@@ -231,18 +232,19 @@ export default function Index() {
       </section>
 
       {/* Ready solutions */}
-      <section className="bg-secondary border-b border-border">
-        <div className="container mx-auto px-4 max-w-7xl py-16">
+      <section className="bg-[#F8FAFC] border-b border-border">
+        <div className="site-container section-py">
           <h2 className="text-2xl font-bold text-foreground mb-3">Готовые решения для бизнеса и учреждений</h2>
           <p className="text-sm text-muted-foreground mb-10">
             Подбираем не отдельное изделие, а комплект под конкретный объект и задачу.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
             {solutions.map((sol) => (
               <Link
                 key={sol.href}
                 to={sol.href}
-                className="border border-border bg-white rounded-xl p-5 hover:border-primary/40 hover:shadow-card transition-all group shadow-sm-soft"
+                className="border border-[#E5E7EB] bg-white rounded-[14px] p-6 hover:border-primary/40 hover:shadow-[0_8px_32px_rgba(15,23,42,0.10)] transition-all group"
+                style={{ boxShadow: "0 2px 8px rgba(15,23,42,0.04)" }}
               >
                 <h3 className="text-sm font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {sol.title}
@@ -262,7 +264,7 @@ export default function Index() {
 
       {/* CTA */}
       <section className="bg-primary">
-        <div className="container mx-auto px-4 max-w-7xl py-16">
+        <div className="site-container section-py">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div className="max-w-xl">
               <h2 className="text-2xl font-bold text-white mb-2">Нужны стенды, таблички или навигация?</h2>

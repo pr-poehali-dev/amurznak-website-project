@@ -161,4 +161,48 @@
   .btn-outline {
     @apply inline-flex items-center justify-center gap-2 bg-transparent text-[#174A84] font-semibold text-base px-6 py-3 rounded-[10px] min-h-[50px] border border-[#174A84] transition-colors hover:bg-[#174A84] hover:text-white focus:outline-none focus:ring-2 focus:ring-[#174A84]/40;
   }
+
+  /* Контейнер: max 1280px, боковые отступы */
+  .site-container {
+    @apply mx-auto w-full max-w-[1280px] px-6 md:px-10;
+  }
+
+  /* Секция: вертикальные отступы */
+  .section-py {
+    @apply py-12 md:py-20;
+  }
+
+  /* Карточка товара / услуги */
+  .product-card {
+    @apply bg-white border border-[#E5E7EB] rounded-[14px] flex flex-col overflow-hidden transition-all hover:shadow-[0_8px_32px_rgba(15,23,42,0.10)] hover:border-primary/30;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  }
+
+  .product-card__img {
+    @apply w-full aspect-[4/3] object-cover bg-[#F8FAFC] flex items-center justify-center;
+  }
+
+  .product-card__body {
+    @apply flex flex-col flex-1 p-5;
+  }
+
+  .product-card__title {
+    @apply text-base font-semibold text-foreground leading-snug mb-2;
+  }
+
+  .product-card__specs {
+    @apply text-sm text-muted-foreground leading-relaxed mb-3 flex-1;
+  }
+
+  .product-card__badge {
+    @apply inline-block text-xs font-medium text-[#D97706] bg-[#FEF3C7] rounded-full px-2.5 py-0.5 mb-3 w-fit;
+  }
+
+  .product-card__footer {
+    @apply flex items-center justify-between gap-3 mt-auto pt-3 border-t border-[#E5E7EB];
+  }
+
+  .product-card__price {
+    @apply text-lg font-bold text-[#174A84];
+  }
 }
